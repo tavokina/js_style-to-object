@@ -13,7 +13,9 @@ function convertToObject(sourceString) {
   );
 
   return splitted.reduce((acc, curr) => {
-    acc[curr[0]] = curr[1];
+    if (curr[0] && curr[1] !== undefined) {
+      acc[curr[0]] = curr[1];
+    }
 
     return acc;
   }, {});

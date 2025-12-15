@@ -5,12 +5,9 @@ module.exports = {
   },
   rules: {
     'no-proto': 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "function-paren-newline": "off",
   },
   plugins: ['jest'],
-
-    "rules": {
-    "comma-dangle": ["error", "always-multiline"],
-    "function-paren-newline": "off"
-  },
 
 };
